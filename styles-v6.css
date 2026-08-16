@@ -25,3 +25,7 @@ html,body{overflow-x:hidden}h1{font-size:clamp(38px,3.6vw,50px)}.problem h2,.pla
 .finalCta p:not(.eyebrow){max-width:620px;margin:0 auto 30px;text-align:center}
 .finalCta .primary{justify-self:auto;min-width:150px}
 @media(max-width:760px){.finalCta{min-height:560px;padding:72px 20px}.finalCta .wrap{display:flex}.finalCta p:not(.eyebrow){margin:0 auto 26px}.finalCta .primary{min-width:0}}
+
+/* Native-resolution SPC3 supplier visual */
+.supplierVisual{max-width:474px;box-shadow:none}
+.supplierVisual img{width:474px;max-width:100%;height:auto;image-rendering:auto}
