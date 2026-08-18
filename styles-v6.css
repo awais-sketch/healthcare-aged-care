@@ -96,3 +96,18 @@ footer{min-height:92px}
 .finalCta .finalNote{margin:0 auto 30px!important}
 .finalCta .primary{justify-self:auto;min-width:150px}
 @media(max-width:760px){.finalCta{min-height:78svh;padding:68px 20px}.finalCta .wrap{display:flex}.finalCta h2{font-size:32px}}
+
+/* Guided audit experience */
+html{scroll-behavior:smooth;scroll-padding-top:96px}.site{position:relative}
+.experienceBar{width:100%;display:grid;grid-template-columns:repeat(4,1fr);padding:0 48px;background:var(--navy);color:#fff}
+.experienceBar div{min-height:112px;padding:27px 34px;border-right:1px solid #29405e;display:flex;flex-direction:column;justify-content:center}.experienceBar div:last-child{border-right:0}.experienceBar b{font-size:22px;letter-spacing:-.5px}.experienceBar span{margin-top:5px;color:#9fb0c7;font-size:11px}
+.journeyRail{position:fixed;z-index:35;left:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:3px;padding:8px;background:rgba(252,252,252,.9);border:1px solid rgba(217,223,231,.8);backdrop-filter:blur(14px)}
+.journeyRail a{width:28px;min-height:34px;display:flex;align-items:center;gap:9px;color:#7b8799;overflow:hidden;transition:width .25s,color .2s,background .2s}.journeyRail a:hover{width:92px;color:var(--blue);background:#f2f6ff}.journeyRail a.active{color:var(--blue);background:#edf3ff}.journeyRail b{min-width:28px;text-align:center;font-size:9px}.journeyRail span{white-space:nowrap;font-size:10px;font-weight:600}
+.stickyBooking{position:fixed;z-index:45;right:22px;bottom:20px;min-width:154px;padding:13px 17px;background:var(--blue);color:#fff;box-shadow:0 12px 35px rgba(12,50,130,.28);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.stickyBooking:hover{transform:translateY(-3px);box-shadow:0 17px 42px rgba(12,50,130,.36)}.stickyBooking span{font-size:13px;font-weight:700}.stickyBooking b{margin-top:3px;color:#cbd9ff;font-size:9px;font-weight:500}
+.problem .comparison{position:relative}.problem .comparison:before{content:"AGREED  ↔  CHARGED";position:absolute;top:-25px;left:0;color:#78a0ff;font-size:9px;font-weight:700;letter-spacing:1.3px}
+.plan{grid-template-columns:1fr;padding-top:70px}.planIntro{max-width:720px}.planIntro h2 br{display:inline}.planIntro h2 br:after{content:" "}.steps{grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid #b9c8eb}.steps article{min-height:170px;border:0;border-right:1px solid var(--line);border-radius:0;padding:24px 20px}.steps article:last-child{border-right:0}.steps article:hover{padding-left:20px;background:#f6f8fc}
+.checkGrid article{transition:transform .25s,background .25s,border-color .25s}.checkGrid article:hover{transform:translateY(-5px);background:#f8faff;border-color:#a8bff1}
+.steps article,.checkGrid article{cursor:pointer;outline:none}.steps article.selected,.steps article:focus-visible{background:#eef4ff;box-shadow:inset 0 3px 0 var(--blue)}.checkGrid article.selected,.checkGrid article:focus-visible{transform:translateY(-5px);background:#f3f7ff;border-color:var(--blue);box-shadow:0 14px 32px rgba(25,65,150,.1)}
+.chapter{opacity:.82;transition:opacity .6s}.chapter.inView{opacity:1}
+@media(max-width:1050px){.journeyRail{display:none}.experienceBar{padding:0 20px}.experienceBar div{padding:22px 18px}.steps{grid-template-columns:1fr 1fr}.steps article{border-bottom:1px solid var(--line)}}
+@media(max-width:620px){.experienceBar{grid-template-columns:1fr 1fr;padding:0}.experienceBar div{min-height:86px;padding:18px;border-bottom:1px solid #29405e}.experienceBar b{font-size:18px}.stickyBooking{left:15px;right:15px;bottom:12px;align-items:center}.steps{grid-template-columns:1fr}.steps article{min-height:auto;border-right:0}.chapter{opacity:1}}
